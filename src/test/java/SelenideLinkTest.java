@@ -22,5 +22,5 @@ public class SelenideLinkTest extends TestBase {
         List<String> listText = Helper.readAllLines(".\\src\\main\\resources\\linkListText");
         $$("ul>li>a").shouldHave(CollectionCondition.exactTexts(listText.toArray(new String[listText.size()])));
     }
-    //если барать ul>li>a то в списке надо удалять текст ...
+    //если барать ul>li>a то в списке надо удалять текст для поля Basic Auth --- (user and pass: admin)
 }
