@@ -21,7 +21,7 @@ public class DriverSingleton {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            initDriver("chrome");
+            initDriver("default");
         }
         return driver;
     }
