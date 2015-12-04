@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  * Created by Admin on 02.11.2015.
  */
 public class Waiter {
+
     //timeout in seconds
     public void waitForElement(WebDriver driver, int timeOut, final By locator) {
         WebDriverWait wait = new WebDriverWait(driver, timeOut);
@@ -44,4 +45,7 @@ public class Waiter {
             }
         });
     }
+
+//    public void waitForEmail ()
+
 }
