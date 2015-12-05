@@ -1,10 +1,8 @@
 package helpers.mail;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.ClientProtocolException;
@@ -32,7 +30,6 @@ public class GuerrillaMail {
     private String stringResponse;
     private JSONObject jSonObject;
 
-
     //API Address
     private final String apiAddr = "http://api.guerrillamail.com/ajax.php?f=%s";
 
@@ -52,7 +49,6 @@ public class GuerrillaMail {
     public static final String ES = "es";
     public static final String IT = "it";
     public static final String PT = "pt";
-
 
     //GuerrillaMail attributes
     private ArrayList<Email> emails = new ArrayList<Email>();
