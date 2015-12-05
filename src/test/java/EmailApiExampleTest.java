@@ -56,6 +56,7 @@ public class EmailApiExampleTest extends TestBase {
         });
 
         List<Email> bodyList = mailer.getEmailList();    //2
+//        List<Email> bodyList = mailer.checkEmail();    //1
 //        String body = mailer.checkEmail().get(0).getBody(); //1
             Assert.assertTrue(bodyList.get(1).getExcerpt().contains("http://the-internet.herokuapp.com/forgot_password"));   //2
 //        Assert.assertTrue(body.contains(mail)); //1

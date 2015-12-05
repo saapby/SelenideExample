@@ -8,7 +8,6 @@ import pages.FactoryRegistrationPage;
 import pages.StaticHomePage;
 import pages.StaticRegistrationPage;
 import ru.yandex.qatools.allure.annotations.Issue;
-import ru.yandex.qatools.allure.annotations.Step;
 import ru.yandex.qatools.allure.annotations.TestCaseId;
 
 import static com.codeborne.selenide.Selenide.$;
