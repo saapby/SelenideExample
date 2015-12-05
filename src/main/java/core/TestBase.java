@@ -1,6 +1,7 @@
 package core;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.WebDriverRunner;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
@@ -22,7 +23,7 @@ public class TestBase {
         Configuration.timeout = 10000;
         Configuration.baseUrl = System.getProperty("baseURL", DEFAULT_URL);
         getEnvironmentProperties();
-        //        Configuration.browser = WebDriverRunner.PHANTOMJS;
+//        Configuration.browser = WebDriverRunner.CHROME;
     }
 
     @AfterTest

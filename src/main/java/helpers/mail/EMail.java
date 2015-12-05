@@ -33,7 +33,7 @@ public class Email {
         excerpt = jSonObject.getString("mail_excerpt");
         att = jSonObject.getInt("att");
         subject = jSonObject.getString("mail_subject");
-        body = jSonObject.getString("mail_body");
+//        body = jSonObject.getString("mail_body");
 //        contentType = jSonObject.getString("content_type");
 //        sourceMailId = jSonObject.getInt("source_mail_id");
         id = jSonObject.getInt("mail_id");

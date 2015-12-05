@@ -26,9 +26,4 @@ public class ScreenShooter extends ExitCodeListener {
     public byte[] makeScreenshot() {
         return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
     }
-
-    @Attachment
-    public File makeScreenshotMethod() {
-        return Screenshots.getScreenShotAsFile();
-    }
 }

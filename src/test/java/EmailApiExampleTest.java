@@ -3,19 +3,12 @@ import helpers.mail.Email;
 import helpers.mail.GuerrillaMail;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import javax.security.auth.login.Configuration;
-
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.Wait;
 import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
-
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -37,19 +30,19 @@ public class EmailApiExampleTest extends TestBase {
 
     @Test
     public void forgotPasswordTest() throws Exception {
-        com.codeborne.selenide.Configuration.timeout = 60000;
-        com.codeborne.selenide.Configuration.pollingInterval = 5000;
+        com.codeborne.selenide.Configuration.timeout = 120000;
+        com.codeborne.selenide.Configuration.pollingInterval = 6000;
 
         Wait().until(new ExpectedCondition<Boolean>() {
             @Override
             public Boolean apply(WebDriver driver) {
                 boolean result = false;
                 try {
-                    if (mailer.checkEmail().size() > 1) {
+                    if (mailer.getEmailList().size() > 1) {
                         result = true;
                     }
                 } catch (Exception ex) {
-
+                    ex.printStackTrace();
                 }
                 return result;
             }
